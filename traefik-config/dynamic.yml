@@ -1,0 +1,24 @@
+http:
+  routers:
+    sample-router:
+      rule: "Path(`/`)"
+      service: sample-service
+#      middlewares:
+#        - retry
+
+  services:
+    sample-service:
+      loadBalancer:
+        servers:
+          - url: http://172.31.11.198:8080
+          - url: http://172.31.1.2:8080
+        healthCheck:
+          path: /
+          interval: "500ms"
+          timeout: "50ms"
+
+  middlewares:
+    retry:
+      retry:
+        attempts: 1
+        initialInterval: 1ms

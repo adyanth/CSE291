@@ -1,0 +1,10 @@
+providers:
+  file:
+    filename: /home/admin/dynamic.yml
+
+entryPoints:
+  web:
+    address: ":80"
+
+log:
+  level: DEBUG
