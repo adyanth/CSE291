@@ -4,3 +4,6 @@
 [submodule "moby"]
 	path = moby
 	url = git@github.com:adyanth/moby.git
+[submodule "containerd"]
+	path = containerd
+	url = git@github.com:adyanth/containerd.git
