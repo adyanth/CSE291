@@ -1,3 +1,6 @@
 [submodule "cli"]
 	path = cli
 	url = git@github.com:adyanth/cli.git
+[submodule "moby"]
+	path = moby
+	url = git@github.com:adyanth/moby.git
